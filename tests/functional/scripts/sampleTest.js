@@ -1,12 +1,13 @@
 module.exports = {
   'Sample functional test' : function (browser) {
     browser
-      .url('http://google.com')
-      .waitForElementVisible('input.gsfi', 60000, true,
+      .url('http://fidi-edson.mybluemix.net/')
+      .waitForElementVisible('button#want', 60000, true,
         function(){}, 'Waiting for Search Input to become visible')
-      .setValue('input.gsfi', 'Test')
-      .waitForElementPresent('#search-page', 60000)
+      .click('button#want')
+      //.setValue('input.gsfi', 'Test')
+      .waitForElementPresent('#want', 60000)
       .pause(5000)
-      .end();
+      .assert.title('Fí di Edson');
   }
 };
