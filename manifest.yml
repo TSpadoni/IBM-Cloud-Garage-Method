@@ -6,5 +6,3 @@ applications:
   name: fidi-edson
   host: fidi-edson
   disk_quota: 1024M
-  services:
-  - fidi-edson-cloudantNoSQLDB
