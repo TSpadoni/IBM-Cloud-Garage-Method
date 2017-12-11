@@ -8,6 +8,6 @@ module.exports = {
       //.setValue('input.gsfi', 'Test')
       .waitForElementPresent('#want', 60000)
       .pause(5000)
-      .assert.title('Fí di Edson');
+      .assert.title('FÍ di Edson');
   }
 };
