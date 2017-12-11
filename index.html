@@ -10,6 +10,8 @@
 
     <title>F&Iacute; di Edson</title>
 
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -28,6 +30,12 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-111010569-1');
+
+      function queroClick(ev) {
+        console.log('aqui');
+        alert('Obrigado');
+        gtag('event', 'quero');
+      }
     </script>
     <!-- /Global site tag (gtag.js) - Google Analytics -->
     
@@ -194,7 +202,7 @@
                   <input type="email" class="form-control form-control-lg" placeholder="Deixe seu email...">
                 </div>
                 <div class="col-12 col-md-3">
-                  <button id="want" onclick="gtag('event', 'quero');" type="submit" class="btn btn-block btn-lg btn-primary">Eu quero!</button>
+                  <button id="want" onclick="queroClick" type="submit" class="btn btn-block btn-lg btn-primary">Eu quero!</button>
                 </div>
               </div>
             </form>
