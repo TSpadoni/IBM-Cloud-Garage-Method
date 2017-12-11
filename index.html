@@ -30,6 +30,13 @@
       gtag('js', new Date());
     
       gtag('config', 'UA-111010569-1');
+
+      (function($) {
+        $("button#want").click(function() {
+
+        });
+      })(jQuery);
+
     </script>
 
   </head>
@@ -177,7 +184,7 @@
                   <input type="email" class="form-control form-control-lg" placeholder="Deixe seu email...">
                 </div>
                 <div class="col-12 col-md-3">
-                  <button type="submit" class="btn btn-block btn-lg btn-primary">Eu quero!</button>
+                  <button id="want" onclick="gtag('event', 'quero');" type="submit" class="btn btn-block btn-lg btn-primary">Eu quero!</button>
                 </div>
               </div>
             </form>
